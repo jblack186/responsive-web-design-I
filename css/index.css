@@ -1,3 +1,483 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	
+}
+
+
+@media ( min-width: 600px ) and ( max-width: 800px ) {
+	.nav {
+		display: flex;
+		
+		justify-content: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 50px;
+		 
+	}
+	 
+	section img {
+		
+		margin-top: 30px;
+		margin-bottom: 30px;
+		
+	} 
+
+	 .trip {
+		display: flex;
+		justify-content: center;
+		margin-left:0px;
+	}
+
+}
+
+
+@media ( max-width: 600px ) {
+	.nav {
+		display: flex;
+		
+		align-items: center;
+		margin-bottom: 50px;
+		flex-direction: column;
+		justify-content: center;
+		}
+	
+	}
+
+
+@media( max-width: 600px ) {
+	.nav a {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: solid 1px gray;
+		display: flex;
+		justify-content: center;
+		
+	}
+
+}
+
+
+
+.nav a {
+	text-decoration: none;
+	color : grey;
+}
+
+@media( max-width: 600px ) {
+	header img {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+		
+	}
+}
+
+@media( max-width: 600px ) {
+	.nav a:first-child {
+		width:100%;
+		border-top: solid 1px gray;
+	}
+}
+
+
+@media ( min-width: 800px) and ( max-width: 1800px ) {
+	.logo-nav {
+		width: 100%;
+		display: flex;
+		justify-content: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		padding-bottom: 70px;
+		
+			
+		}
+	.logo-nav :first-child {
+		order: 1;
+		
+	}
+
+	.logo {
+		/* padding-right: 500px; */
+	}
+
+	}
+
+/* @media( max-width: 800px ) and ( min-width: 600px ) {
+	.nav img {
+		display: flex;
+		flex-direction: column;
+		order: -1;
+		border: solid black;
+		align-items: flex-start;
+		
+		
+	}
+} */
+	
+.trip  {
+		
+		display: flex;
+		align-items: center;
+		width: 100%;
+		vertical-align: top;
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0;
+		font-size: 75px;
+		/* padding-left: 260px; */
+		text-align: center;
+		justify-content: space-evenly;
+		margin-bottom: 50px;
+		padding-bottom: 40px;
+		border-bottom: solid black;
+	
+	}
+
+@media ( max-width: 800px) {
+	.trip {
+		padding-left: 0px;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media ( max-width: 600px ) {
+	.trip {
+		padding-left: 0px;
+		
+		justify-content: left;
+		justify-content: baseline;
+	}
+}
+
+@media ( max-width: 600px ) {
+	.trip img {
+		display: none;
+	}
+}
+
+@media ( max-width: 800px ) {
+	.trip h1 {
+		margin-left: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
+@media ( max-width: 800px ) {
+	.trip img {
+		display: flex;
+		display: none;
+	}
+}
+.trip h1 {
+	margin-left: 90px;
+	
+}
+
+.trip p {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+button {
+	
+	
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	margin-left: 90px;
+	text-color: black;
+	
+}
+
+.circle {
+	display: flex;
+	vertical-align: top;
+	
+	margin-left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.nav a{
+	
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
+
+.two {
+	margin-left: 100px;
+}
+
+.three {
+	margin-left: 30px;
+}
+
+.top-content {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	
+	
+}
+
+.content1 {
+	display: inline-block;
+	width: 30%;
+	margin-bottom: 0px;
+	text-align: left;
+
+}
+
+@media ( max-width: 600px ) {
+	.content1 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		text-align: left;
+
+
+	}
+}
+
+
+@media (max-width: 600px ) {
+	p.features {
+		display: flex;
+		text-align: left;
+	}
+}
+
+.content2 {
+	display: inline-block;
+	text-align: left;
+	width: 30%;
+	vertical-align: top
+}
+
+@media ( max-width: 600px ) {
+	.content2 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		text-align: left;
+	}
+}
+
+@media ( max-width: 600px ) {
+	.top-content {
+		margin-top: 0;
+		
+	}
+}
+
+@media ( max-width: 600px ) {
+	.bottom-content {
+		display: flex;
+		flex-direction: column;
+	}
+}
+ body h2 {
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+	width: 271.5%;
+}
+
+.about {
+	display: inline-block;
+	vertical-align: top;
+}
+
+body {
+	text-align: center;
+}
+
+.content3 {
+	display: inline-block;
+	width: 20%;
+	margin-right: 20px;
+	text-align: left;
+}
+
+@media ( max-width: 600px ) {
+	.content3 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		text-align: left;
+		
+	}
+}
+
+.content4 {
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+}
+
+@media ( max-width: 600px ) {
+	.content4 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		text-align: left;
+		
+	}
+}
+
+.content5 {
+	display: inline-block;
+	width: 20%;
+	margin-left: 20px;
+	text-align: left;
+}
+
+@media ( max-width: 600px ) {
+	.content5 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-left: 0;
+		margin-bottom: 40px;
+		text-align: left;
+		
+	}
+}
+
+.bottom-content {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 40px;
+	border-bottom: solid black;
+}
+
+.middle-img {
+	vertical-align: middle;
+}
+
+.address {
+	display: inline-block;
+	width: 30%;
+	margin-right: 700px;
+	vertical-align: top;
+	text-align: left;
+	margin-bottom: 100px;
+	
+}
+
+.contact {
+	font-family: 'Bangers', cursive;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.street {
+	//margin-bottom: 10px;
+}
+
+.country {
+	margin-bottom: 10px;
+}
+
+.number {
+	margin-bottom: 10px;
+}
+
+.email {
+	
+	margin-bottom: 10px;
+}
